@@ -1,0 +1,187 @@
+<!-- Count start -->
+<div class="count">
+  <div class="row1">
+    <div class="count_card">
+      <div class="count_content">
+        <h6>24+</h6>
+        <p>Cities</p>
+      </div>
+    </div>
+      <div class="count_card">
+        <div class="count_content">
+        <h6>700+</h6>
+        <p>Places</p>
+      </div>
+      </div>
+      <div class="count_card">
+        <div class="count_content">
+        <h6>200+</h6>
+        <p>Hotels</p>
+      </div>
+      </div>
+      <div class="count_card">
+        <div class="count_content">
+        <h6>2k+</h6>
+        <p>Review</p>
+      </div>
+      </div>
+    </div>
+    </div>
+
+
+
+    
+  /* count */
+  .count {
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+
+  }
+
+  .row1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .count .row1 .count_card {
+    background-color: #e8f1fa;
+    width: 70%;
+    position: relative;
+    border-style: solid 1px;
+    margin: 5px;
+   
+  }
+  .count_content{
+    text-align: center;
+    height: 135px;
+    width: 170px;
+  }
+  .count_content h6 {
+    color: yellowgreen;
+    margin-bottom: 30px;
+}
+
+.count_content p {
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+
+
+
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- flex: 1: -->
+When applied to a flex item, flex: 1; means that the item will grow and take up all available space along the main axis within the flex container.When the screen size changes or when dealing with different screen resolutions, using flex: 1; ensures that flex items adjust dynamically.
+<!-- To create grid -->::display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 10px;
+<!-- Header -->:  position: absolute;
+  top: 0;
+  left: 0;
+  <!--  z-index: 4; -->it is used in header,it determines the stacking order, which means this header will be stacked above elements with lower z-index values.
+
+
+
+
+
+
+
+
+
+
+ /* ================================= FOOTER =============================== */
+.footer {
+  background-color: #0f2341;
+}
+
+.footer .row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 2rem 3rem;
+  margin-left: 110px;
+}
+
+.footer .row .col:last-child {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(10rem, 1fr));
+  gap: 2rem;
+}
+
+.footer .row .col:last-child img {
+  height: 8rem;
+  width: 8rem;
+}
+
+.footer .row .col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .row .col h3 {
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.footer .row .col a {
+  display: inline-block;
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+
+    <!-- -----------------------------FOOTER SECTION-------------------------------->
+    <footer class="footer">
+      <div class="row">
+        <div class="col">
+          <h3>Company</h3>
+          <a href="#">Contact Us</a>
+          <a href="#">Executive Team</a>
+          <a href="#">FAQs</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+        <div class="col">
+          <h3>Quick Links</h3>
+
+          <a href="#">Home</a>
+          <a href="#">Destinations</a>
+          <a href="#">Packages</a>
+          <a href="#">Service</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="col">
+          <h3>Profile</h3>
+
+          <a href="#">Your Account</a>
+          <a href="#">Bookings</a>
+          <a href="#">Payments & Refunds</a>
+          <a href="#">Membership</a>
+          <a href="#">Settings</a>
+        </div>
+        <div class="col">
+          <img src="./img/pic-1.jpg" alt="" />
+          <img src="./img/pic-2.jpg" alt="" />
+          <img src="./img/pic-3.jpg" alt="" />
+          <img src="./img/pic-4.jpg" alt="" />
+        </div>
+      </div>
+    </footer>
+
+    <a href="#top" class="go-top" data-go-top>
+      <ion-icon name="chevron-up-outline"></ion-icon>
+    </a>
+
+
+
+    input:valid+label,
+    input:focus+label{
+      background-color: white;
+      color: black;
+      transform: translate(10px, -20px);
+      padding: 2px 5px;
+      font-size: 8px;
+      border-radius: 4px;
+    }
